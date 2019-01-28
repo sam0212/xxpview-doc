@@ -1,0 +1,240 @@
+.info-menu{
+    display: inline-block;
+    margin-left: 32px;
+
+    .ivu-btn-text:focus{
+        box-shadow: none;
+    }
+
+    &-sign{
+        &-in {
+            cursor: pointer;
+            display: inline-block;
+            margin-right: 8px;
+
+            button.ivu-btn {
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+            .ivu-avatar{
+                background-color: #87d068;
+                .ivu-icon{
+                    top: -2px;
+                }
+            }
+
+            &-aside{
+                font-size: 14px;
+                margin-top: 32px;
+                &-tip{
+                    text-align: center;
+                    margin: 32px 0 16px;
+                }
+            }
+
+            &-form{
+                padding: 0 16px;
+            }
+        }
+
+        &-out{
+            cursor: pointer;
+            display: inline-block;
+            margin-right: 8px;
+        }
+    }
+
+
+    &-add, &-more{
+        display: inline-block;
+
+        .ivu-btn-large{
+            padding-left: 6px;
+            padding-right: 6px;
+        }
+    }
+
+    &-add{
+        &-dropdown{
+            font-size: 14px !important;
+            span{
+                vertical-align: middle;
+            }
+            .ivu-icon{
+                vertical-align: middle;
+                margin-right: 5px;
+                &.normal{
+                    display: inline-block;
+                    width: 16px;
+                    font-size: 16px;
+                }
+            }
+            button .ivu-icon{
+                margin-right: 0;
+            }
+        }
+        &-write{
+            .ivu-dropdown-item{
+                font-size: 14px !important;
+                padding: 8px 16px;
+            }
+        }
+    }
+
+    &-aside{
+        &-vip{
+            margin-top: 3px;
+            img{
+                width: 12px;
+                height: 12px;
+                vertical-align: middle;
+            }
+            span{
+                font-size: 12px;
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+    }
+
+    &-user{
+        width: 140px;
+        &-name{
+            font-size: 16px;
+        }
+        .ivu-dropdown-item{
+            font-size: 14px !important;
+            padding: 8px 16px;
+            i{
+                text-align: center;
+            }
+            .img{
+                fill: inherit;
+            }
+        }
+    }
+
+    &-more{
+        &-item{
+            margin-bottom: 16px;
+
+            &-main{
+                text-align: right;
+                .ivu-select{
+                    text-align: left;
+                }
+            }
+            &-title{
+                font-weight: bold;
+                font-size: 14px;
+                margin: 12px 0;
+                &.normal{
+                    font-weight: normal;
+                    margin: 0;
+                }
+            }
+            &-radio{
+                display: inline-block;
+                margin-left: 12px;
+                position: relative;
+                img{
+                    display: inline-block;
+                    width: 42px;
+                    border-radius: 3px;
+                    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+                    cursor: pointer;
+                }
+                &.on:after{
+                    content: '';
+                    display: block;
+                    width: 4px;
+                    height: 4px;
+                    border-radius: 4px;
+                    background: #00c261;
+                    margin: 0 auto;
+                }
+            }
+
+            &-right-align{
+                text-align: right;
+            }
+        }
+
+        &-alert.ivu-alert{
+            margin-top: 12px;
+            padding-right: 16px;
+        }
+
+        &-social{
+            text-align: center;
+            margin-top: 32px;
+            padding: 0 4px;
+            img{
+                display: block;
+                width: 100%;
+                margin: 0 auto;
+            }
+        }
+        &-smile{
+            position: absolute;
+            text-align: center;
+            bottom: 32px;
+            left: 0;
+            right: 0;
+            color: #b2b2b2;
+            text-shadow: 0 1px 1px #fff;
+            font-size: 20px;
+            user-select: none;
+        }
+    }
+
+    &-light{
+        .ivu-btn-text{
+            color: #fff;
+        }
+        .ivu-btn-text:hover{
+            background-color: transparent;
+            color: #fff;
+        }
+    }
+}
+
+// 验证码
+#vaptcha_container{
+    height: 36px;
+    border-radius: 4px;
+}
+.vaptcha-init-main {
+    display: table;
+    width: 100%;
+    height: 100%;
+    background-color: #EEEEEE;
+    border-radius: 4px;
+}
+.vaptcha-init-loading {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.vaptcha-init-loading>a {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: none;
+}
+.vaptcha-init-loading>a img {
+    vertical-align: middle;
+}
+.vaptcha-init-loading .vaptcha-text {
+    font-family: sans-serif;
+    font-size: 12px;
+    color: #CCCCCC;
+    vertical-align: middle;
+}
+.vp-about, .vp-logo{
+    display: none !important;
+}
+.vp-dark-btn.vp-basic-btn{
+    border-radius: 4px !important;
+}
