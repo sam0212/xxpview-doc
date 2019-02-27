@@ -35,7 +35,6 @@
 </style>
 <template>
     <div>
-        <p>abcd</p>
         <pre :class="{bg: bg}"><code :class="language" ref="code"><slot></slot></code></pre>
         <span class="open-fiddle" v-if="title !== 'Code'" @click="openFiddle">
             <Tooltip :content="$t('index.code_jsfiddle')" placement="top" transfer>
