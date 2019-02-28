@@ -15,6 +15,7 @@ import enLocale from 'iview/dist/locale/en-US';
 import Env from './config/env';
 import bus from './components/bus';
 import './my-theme/index.less';
+import './my-theme/theme-define.less';
 // import 'iview/dist/styles/iview.css';
 // import './styles/theme-christmas/index.less';
 
