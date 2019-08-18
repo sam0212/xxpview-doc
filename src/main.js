@@ -51,6 +51,8 @@ const mergeEN = Object.assign(enLocale, locales['en-US']);
 Vue.locale('zh-CN', mergeZH);
 Vue.locale('en-US', mergeEN);
 
+console.log('add hello console.log');
+
 // 路由配置
 const RouterConfig = {
     routes: Routers
